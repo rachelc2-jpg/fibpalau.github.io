@@ -1,0 +1,345 @@
+<!-- ############################################################
+Rachel Cheng
+Student Consultant
+Foreign Investment Board
+Republic of Palau
+(C) 2026
+############################################################ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quarterly Report Form</title>
+<link rel="icon" href="assets/gov_logo.png">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" media="all" type="text/css" href="css/stylesmobile.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="row header-img">
+<img class="header-logo" src="assets/gov_logo.png">
+<div class="header-text">
+<h1>Foreign Investment Board</h1>
+<p>Palau's primary foreign investment resource.</p>
+</div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light header">
+<div class="collapse navbar-collapse">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="newinvestors.html">New Investors</a></li>
+<li class="nav-item"><a class="nav-link" href="currentinvestors.html">Current Investors</a></li>
+<li class="nav-item active"><a class="nav-link" href="portal.html">Submission Portal</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+
+<div class="fade-in">
+<div class="portal">
+
+
+<h2>Quarterly Report Submission</h2>
+
+
+<!-- ========================= -->
+<!-- STEP 1: PAYMENT -->
+<!-- ========================= -->
+<div id="payment-section">
+
+
+<div class="alert alert-info" style="margin-top:10px;">
+<strong>Before You Begin:</strong>
+<p style="margin-bottom:8px;">
+Please review the Quarterly Report Checklist to ensure you have all materials ready before beginning the submission process. Missing materials will result in a delay in processing your report.
+</p>
+<a href="https://www.palaugov.pw/wp-content/uploads/QUARTERLY-REPORT-CHECKLIST-021026.pdf"
+target="_blank"
+class="btn btn-outline-primary btn-sm">
+View Checklist (PDF)
+</a>
+</div>
+
+
+<h4>Step 1: Payment (Required)</h4>
+
+
+<div class="form-group">
+<label>Business Name</label>
+<input type="text" class="form-control" id="biz-name-input" required>
+</div>
+
+
+<div class="form-group">
+<label>Quarter</label>
+<select class="form-control" id="quarter-select" required>
+<option value="">Choose...</option>
+<option value="Q1">Q1</option>
+<option value="Q2">Q2</option>
+<option value="Q3">Q3</option>
+<option value="Q4">Q4</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<p style="margin-bottom:8px; font-size:14px; color:#333;">
+Download and complete the invoice below.
+</p>
+<a href="https://drive.google.com/file/d/1rDRSief3Rebj7kvSEPJ6Rn6ka347my8d/view?usp=sharing"
+target="_blank"
+class="btn btn-outline-primary btn-sm"
+style="display:inline-block;">
+Download Invoice Form (PDF)
+</a>
+</div>
+
+
+<div class="form-group">
+<button id="generate-transmittal" class="btn btn-primary" type="button">
+  Generate Transmittal Number
+</button>
+<div id="transmittal-box" style="margin-top:10px; display:none;" class="alert alert-info">
+<strong>Your Transmittal Number:</strong>
+<span id="transmittal-number"></span>
+<br>
+Please write this number on your invoice PDF before proceeding.
+</div>
+</div>
+
+
+<div class="form-group">
+<label>Upload Receipt</label>
+<input type="file" id="receipt-input" class="form-control">
+</div>
+
+
+<div class="form-group">
+<label>Upload Invoice</label>
+<input type="file" id="invoice-input" class="form-control">
+</div>
+
+
+<div class="form-group text-center" style="margin-top:20px;">
+<button type="button" id="payment-next" class="btn btn-primary">
+Continue
+</button>
+</div>
+
+
+</div><!-- /payment-section -->
+
+
+<!-- ========================= -->
+<!-- STEP 2: REPORT -->
+<!-- ========================= -->
+<div id="qr-section" style="display:none;">
+
+
+<p>Attach addendums for all sections marked as <b>(Required)</b>.</p>
+<hr>
+
+
+<form id="qr-upload-form">
+
+
+<!-- 1 -->
+<h5>1. Quarterly Report Form <b>(Required)</b></h5>
+<div style="margin-bottom:15px;">
+<a href="https://www.palaugov.pw/wp-content/uploads/QUARTERLY-REPORT-FORM-fillable.pdf"
+target="_blank"
+class="btn btn-outline-secondary btn-sm">
+Download Quarterly Report Form (PDF)
+</a>
+</div>
+<div class="custom-file">
+<input required type="file" class="custom-file-input" id="fiac-select1">
+<label class="custom-file-label">Choose file...</label>
+</div>
+<hr>
+
+
+<!-- 2 -->
+<h5>2. Physical Location Section (§3) <b>(Required)</b></h5>
+<p>Provide a reasonable quality image of your location, including lot number, hamlet, and state.</p>
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="fiac-select2">
+<label class="custom-file-label">Choose file...</label>
+</div>
+<hr>
+
+
+<!-- 3 -->
+<h5>3. License Section (§7) <b>(Required)</b></h5>
+<p>Attach any updated or active business licenses.</p>
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="fiac-select3">
+<label class="custom-file-label">Choose file...</label>
+</div>
+<hr>
+
+
+<!-- 4 -->
+<h5>4. Current Employees (§8) <b>(Required)</b></h5>
+<p>List of current employees following official reporting format.</p>
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="fiac-select4">
+<label class="custom-file-label">Choose file...</label>
+</div>
+<hr>
+
+
+<!-- 5 -->
+<h5>5. Employee Programs (§9) <b>(Required)</b></h5>
+<p>Details of workforce training and employee development programs.</p>
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="fiac-select5">
+<label class="custom-file-label">Choose file...</label>
+</div>
+<hr>
+
+
+<!-- 6 -->
+<h5>6. Tax Information (§10–14) <b>(Required)</b></h5>
+<p>Relevant tax filings and compliance documents.</p>
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="fiac-select6">
+<label class="custom-file-label">Choose file...</label>
+</div>
+<hr>
+
+
+<!-- 7 -->
+<h5>7. Corporate Updates &amp; Loans (§15–17) <b>(Required)</b></h5>
+<p>Corporate structural updates, financing, and loan disclosures.</p>
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="fiac-select7">
+<label class="custom-file-label">Choose file...</label>
+</div>
+<hr>
+
+
+<!-- 8 -->
+<h5>8. Optional Attachment</h5>
+<p>Any additional supporting documents for review.</p>
+<div class="custom-file">
+<input type="file" class="custom-file-input" id="fiac-select8">
+<label class="custom-file-label">Choose file...</label>
+</div>
+<hr>
+
+
+<input type="submit" class="btn btn-primary btn-lg" value="Submit Report">
+<div id="upload-progress-container" style="display:none; margin-top:20px;">
+  <p id="upload-progress-label" style="font-size:14px; margin-bottom:6px;">Uploading files...</p>
+  <div class="progress">
+    <div id="upload-progress-bar" class="progress-bar progress-bar-striped active"
+         role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+      0%
+    </div>
+  </div>
+</div>
+
+</form>
+
+
+</div><!-- /qr-section -->
+
+
+<!-- ========================= -->
+<!-- SUCCESS MESSAGE -->
+<!-- ========================= -->
+<div id="success-message" style="display:none; margin-top:30px;" class="alert alert-success">
+<h4>Quarterly Report Submitted Successfully</h4>
+<p>Your report has been received by the Foreign Investment Board.</p>
+<p><strong>Business:</strong> <span id="confirm-business"></span></p>
+<p><strong>Quarter:</strong> <span id="confirm-quarter"></span></p>
+</div>
+
+
+</div><!-- /portal -->
+</div><!-- /fade-in -->
+<!-- =========================
+     ========================= -->
+<div id="chat-widget">
+  <button id="chat-toggle" class="btn btn-primary" type="button">
+    <i class="fa fa-comment"></i> Questions?
+  </button>
+
+  <div id="chat-panel" style="display:none;">
+    <div id="chat-header">
+      <span>FIB Submission Assistant</span>
+      <div style="display:flex; align-items:center; gap:6px;">
+        <select id="chat-language" title="Select language"
+          style="font-size:12px; border:1px solid rgba(255,255,255,0.6);
+                background:rgba(255,255,255,0.25); color:#fff;
+                border-radius:4px; padding:2px 6px; cursor:pointer;">
+          <option value="English" style="background:#007bff; color:#fff;">🌐 EN</option>
+          <option value="Japanese" style="background:#007bff; color:#fff;">🇯🇵 JP</option>
+          <option value="Chinese" style="background:#007bff; color:#fff;">🇨🇳 中文</option>
+        </select> 
+        <button id="chat-close" type="button" aria-label="Close">&times;</button>
+      </div>
+    </div>
+    <div id="chat-log"></div>
+    <div id="chat-input-row">
+      <input type="text" id="chat-input" class="form-control" placeholder="Ask about required documents...">
+      <button id="chat-send" class="btn btn-primary" type="button">Send</button>
+    </div>
+  </div>
+</div>
+
+<style>
+#chat-widget { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+#chat-panel {
+  width: 320px; height: 420px;
+  background: #fff; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  display: flex; flex-direction: column;
+  position: absolute; bottom: 60px; right: 0;
+  resize: both;
+  overflow: hidden;
+  min-width: 260px; min-height: 300px;
+  max-width: 90vw; max-height: 80vh;
+}
+#chat-header {
+  background: #007bff; color: #fff; padding: 10px 12px; border-radius: 8px 8px 0 0;
+  display: flex; justify-content: space-between; align-items: center; font-weight: 600;
+  flex-shrink: 0;
+}
+#chat-header button { background: none; border: none; color: #fff; font-size: 18px; cursor: pointer; }
+#chat-log { flex: 1; overflow-y: auto; padding: 10px; font-size: 14px; }
+.chat-msg { margin-bottom: 8px; padding: 8px 10px; border-radius: 6px; max-width: 85%; }
+.chat-user { background: #e9ecef; margin-left: auto; text-align: right; }
+.chat-bot { background: #d1e7ff; }
+.chat-error { background: #f8d7da; }
+.chat-thinking { font-style: italic; color: #666; }
+#chat-input-row { display: flex; padding: 8px; border-top: 1px solid #ddd; flex-shrink: 0; }
+#chat-input-row input { flex: 1; margin-right: 6px; }
+</style>
+
+<script>
+$(document).on('click', '#chat-toggle', function () {
+  $('#chat-panel').toggle();
+  scrollChatToBottom();
+});
+$(document).on('click', '#chat-close', function () {
+  $('#chat-panel').hide();
+});
+</script>
+
+<script src="js/qr_scripts.js"></script>
+
+
+</body>
+</html>
+

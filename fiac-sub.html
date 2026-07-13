@@ -1,0 +1,242 @@
+<!-- ############################################################ 
+
+                             Rachel Cheng 
+                           Student Consultant 
+                        Foreign Investment Board 
+                           Republic of Palau
+                                (C) 2026
+
+     ############################################################ -->
+
+
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<head>
+    <title>FIAC Application Form</title>
+    <link rel="icon" href="assets/gov_logo.png">
+    
+    <!-- Metadata for the website -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content=" Rachel Cheng">
+    <meta name="keywords" content=" Palau, Foreign Investment Board, FIB, Office of the President, Submission, Portal">
+    <meta name="description" content="Home of the FIB's Foreign Investment Approval Certificate submission portal.">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/stylesmobile.css" /> 
+    
+    <!-- jQuery  -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Popper.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- Bootstrap.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/fiac_scripts.js"></script>
+
+    
+    <!-- <link rel="stylesheet" href="https://cdn01.boxcdn.net/platform/elements/10.1.0/en-US/uploader.css"/>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Intl"></script> 
+    <script type="text/javascript" src="https://cdn01.boxcdn.net/platform/elements/10.1.0/en-US/uploader.js"></script> -->
+</head>
+
+<div class="row header-img">
+    <img class="header-logo" src="assets/gov_logo.png">
+    <div class="header-text">
+        <h1>Foreign Investment Board</h1>
+        <p>Palau's primary foreign investment resource.</p>
+    </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new-investors.html">&nbsp;New Investors&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="current-investors.html">&nbsp;Current Investors&nbsp;</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="portal.html">&nbsp;Submission Portal&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">&nbsp;Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<div class="fade-in">
+
+  <div class="portal">
+    <br>
+    <emph><h2>FIAC Application Submission</h2></emph><br>
+    <i>Remember that submission of a digital FIAC is only a subset of the application process, and will not guarauntee the Board review of an application.</i> View the rest of the submission steps <a href="new-investors.html" >here</a>.</p><br>
+    
+    <div class="sub-reminder">
+    Keep the following in mind as you complete your application:<br><br>
+    <ul>
+      <li>Please format your attachments to include page numbers. You should reference a particular attachment's page number in a short note on the corresponding section of the FIAC Application.</li>
+    </ul>
+    </div>
+    <!-- UPLOAD SECTION -->
+    <form name="fiac" enctype="multipart/form-data" method="POST" id="fiac-upload-form">
+      
+      <div class="form-group">
+        <label for="biz-name-input">Enter your business name exactly as written on your FIAC Application:</label>
+        <input required type="text" class="form-control" id="biz-name-input" placeholder="Business Name" pattern="^[^.^\/^\\]*$" minlength="1" maxlength="255">
+        <!-- Regex: No inputs containing "/", "\", or the special names ".." and "." for internal naming purposes -->
+      </div><hr>
+      Attach addendums for the following sections where needed. Only the sections marked as <b>(Required)</b> are necessary to submit an application.<br><br>
+
+      1. Attach your completed FIAC Application<b> (Required)</b><br><br>
+      <div class="custom-file">
+        <input required type="file" class="custom-file-input" id="fiac-select1">
+        <label class="custom-file-label" for="fiac-select1">Choose file...</label>
+      </div><br><br>
+
+      2. Attach the Corporate Document sections of your application (&#167;6-7 of the FIAC)<br><br>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="fiac-select2">
+        <label class="custom-file-label" for="fiac-select2">Choose file...</label>
+      </div><br><br>
+
+      3. Attach the Business Profiles sections (&#167;8 and 9)<b> (Required)</b><br><br>
+      <div class="custom-file">
+        <input  type="file" class="custom-file-input" id="fiac-select3">
+        <label class="custom-file-label" for="fiac-select3">Choose file...</label>
+      </div><br><br>
+
+      4. Attach the Affiliate Enterprise sections (&#167;10, 11, and 12)<br><br>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="fiac-select4">
+        <label class="custom-file-label" for="fiac-select4">Choose file...</label>
+      </div><br><br>
+
+      5. Attach the Proof of Financial Responsibility (&#167;13)<b> (Required)</b>
+      <ul>
+        <li><b>Do not</b> attach your Financial Statement from section <u><i>&#167;13 d) i.</i></u> here. Instead, upload it to the following section (#6 in the Submission Portal).</li>
+        <li>Insurance companies should append their annual statement and certificate to this section.</li>
+      </ul>
+      <div class="custom-file">
+        <input  type="file" class="custom-file-input" id="fiac-select5">
+        <label class="custom-file-label" for="fiac-select5">Choose file...</label>
+      </div><br><br>
+
+      6. Attach a Financial Statement from <u><i>&#167;13 d) i.</i></u> of the FIAC Application<b> (Required)</b><br><br>
+      <div class="custom-file">
+        <input  type="file" class="custom-file-input" id="fiac-select6">
+        <label class="custom-file-label" for="fiac-select6">Choose file...</label>
+      </div><br><br>
+
+      7. Attach a Business Proposal (&#167;14)<b> (Required)</b><br><br>
+      <div class="custom-file">
+        <input  type="file" class="custom-file-input" id="fiac-select7">
+        <label class="custom-file-label" for="fiac-select7">Choose file...</label>
+      </div><br><br>
+
+      8. Attach an optional attachment for the FIB to review (&#167;15)</b>
+      <br><br>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="fiac-select8">
+        <label class="custom-file-label" for="fiac-select8">Choose file...</label>
+      </div><br><br>
+
+      
+      <!-- Submit -->
+      <input class="btn btn-lg btn-primary" type="submit" id="fiac-upload-button" style="font-size: 1em;" />
+    </form>
+
+    <!-- Loading Modal: -->
+    <div id="loading-modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h5>Your files are being uploaded, do not refresh the page.</h5><br>
+        <p>Check your upload status below:</p>
+
+        <ul id="loading-list">
+          <li id="file_1">1. FIAC Application&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li>
+          <li id="file_2">2. Corporate Documents&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li>
+          <li id="file_3">3. Business Profiles&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li>
+          <li id="file_4">4. Affiliate Enterprises&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li>
+          <li id="file_5">5. Proof of Financial Responsibility&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li>
+          <li id="file_6">6. Financial Statement&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li>
+          <li id="file_7">7. Business Proposal&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li>
+          <li id="file_8">8. Optional Attachment&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li>
+          <li>Uploading files&nbsp;&nbsp;<img id="loading-img" src="assets/loading.gif"></li>
+          <p class="text-muted tiny small "><br>File uploads will take anywhere from 1 to 10 minutes to complete, depending on your internet speed and connection. Please minimize this page and come back to it later (make sure your internet connection stays uninterrupted).</p>
+        </ul>
+
+        <ul id="name-list">
+          <li>Uploading files&nbsp;&nbsp;<img id="loading-img" src="assets/failed.jpeg"></li><br>
+          <li>It looks like you've already uploaded an application for your entered business name.<br>Try submitting again, and add a submission number to your business name as such: "Biz Name - Submission #2"</li><br>
+          <button id="modal-close" class="btn btn-primary">Try Again</button>
+        </ul>
+
+        <ul id="fail-list">
+          <li>Uploading files&nbsp;&nbsp;<img id="loading-img" src="assets/failed.jpeg"></li><br>
+          <li>Sorry, something went wrong with your upload. This was most likely caused by an interruption in your internet connection.</li><br>
+          <li>Refresh your browser, and try uploading again.</li><br>
+          <a class="btn btn-primary" href="fiac-sub.html">Try Again</a>
+          <p class="text-muted tiny small "><br><a href="mailto:mkornyev@gmail.com">Email</a> or <a href="tel:680-488-1135">call</a> the webmaster if the problem continues to persist.</p>
+        </ul>
+
+        <ul id="success-list">
+          <li>Uploading files&nbsp;&nbsp;<img id="loading-img" src="assets/success.png"></li><br>
+          <li>Congratulations, your files were uploaded successfully. Thank you for taking part in the FIB's paperless initiative.</li><br>
+          <li>To finalize your FIAC Application, complete the following:
+            <ul style="list-style: disc;">
+              <li>Deliver an application fee, along with a hard copy of your entire submission, to the FIB Office.</li>
+              <li>Once prompted by the FIB, deliver additional hard copies of your submission. At this stage, your application is deemed complete.</li>
+            </ul><br>
+          Refer to the new investor resource page for a complete list of steps to complete.</li><br>
+          <a class="btn btn-primary" href="new-investors.html">See Remaining Steps</a>
+          <p class="text-muted tiny small "><br>If there is a mistake in your submission, <a href="fiac-sub.html">try submitting again</a> and use an alternate business name:<br>(ie. "Biz Name - Submission #2")</p>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+  <!-- <br>
+  <emph><p>Box UI Uploader:</p></emph>
+    <div class="mb-5">
+        <div class="ui_uploader" style="height:300px; width: 50%; border: 1px solid lightgray;"></div>
+
+        <script>
+            var folderId = '80802264662';
+            var accessToken = 'goiLalIEuF9ptQxHSbISBmTLerVCzdKF';
+            var uploader = new Box.ContentUploader();
+            uploader.show(folderId, accessToken, {
+                container: '.ui_uploader'
+            });
+        </script>
+    </div> -->
+
+</div>
+
+<div class="footer">
+  <ul style="list-style: none;">
+    <li style="float: left;">Foreign Investment Board&nbsp;&nbsp;<a href="mailto:fib@palaugov.org">&copy;&nbsp;2026</a></li>
+  </ul>
+</div>
+
+</html>

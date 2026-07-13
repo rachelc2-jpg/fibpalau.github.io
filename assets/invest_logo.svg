@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="406px" height="247px" viewBox="0 0 406 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Oval" fill="#FFDE00" transform="translate(123.500000, 123.500000) scale(-1, 1) translate(-123.500000, -123.500000) " cx="123.5" cy="123.5" r="123.5"></circle>
+            <text id="Invest" font-family="MyriadPro-Bold, Myriad Pro" font-size="100" font-weight="bold" fill="#4AADD6">
+                <tspan x="127" y="100">Invest</tspan>
+            </text>
+            <text id="Palau" font-family="MyriadPro-Bold, Myriad Pro" font-size="100" font-weight="bold" fill="#4AADD6">
+                <tspan x="162" y="208">Palau</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

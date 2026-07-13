@@ -1,0 +1,249 @@
+/*section.header-img {
+	background: url(../assets/bg.jpg);
+	background-attachment: fixed;
+    background-position: bottom -55px right 0px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}*/
+
+
+html {
+  height: 100%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+/* ------ HEADER SECTION ------ */ 
+
+.header-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 180%;
+  position: relative;
+  color: white;
+  background-color: #002232;
+  display:flex;
+  align-items:center;
+}
+.header-img img {
+  float: left;
+  padding: 1%;
+  padding-left: 5%; 
+  width: 15%;
+  height: 15%;
+}
+
+.header-text {
+  float: left;
+  margin: 1%;
+}
+.header-text p {
+  float: left;
+  font-size: 1em;
+}
+.header-text h1 {
+  font-size: 2em;
+}
+
+nav a.nav-link {
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+nav ul {
+  margin-left: 4%;
+}
+
+nav.header {
+	border-bottom: 1px solid #E5E5E5;
+  box-shadow: 0px 2.5px #F2F2F2;
+}
+
+/* ------ HEADER END ------ */ 
+
+/* ------ CONTENT SECTION ------ */ 
+
+div.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    font-weight: 0%;
+  }
+  to {
+    opacity: 1;
+    font-weight: 100%;
+  }
+}
+
+div.get-started-cards div.col-sm {
+  margin-top: 2%;
+}
+
+div.get-started-cards div.col-sm a,
+div.footer a,
+div.contact a,
+div.contact-table table a,
+div.new-investors a,
+div.curr-investors p a, 
+div.portal p a,
+div.portal a {
+  text-decoration: none;
+}
+
+div.get-started-cards div.card {
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+div.get-started-cards div.card:hover {
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75); 
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  box-shadow: -1px 9px 40px -12px rgba(0,0,blue,alpha);
+
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+table.newinv-table th {
+  width: 25%;
+}
+
+table.newinv-table td {
+  padding-left: 15px;
+}
+
+div.contact-table {
+  float:left; 
+}
+table th {
+  text-align: right;
+}
+
+#fiac-upload-form,
+#qr-upload-form {
+  width: 87.5%; 
+  padding: 5%; 
+  border: 1px solid lightgray; 
+  margin: auto;
+}
+
+#fiac-upload-form label,
+#qr-upload-form label {
+  overflow: hidden;
+}
+
+#fiac-upload-form div.form-group input,
+#qr-upload-form div.form-group input,
+#qr-upload-form div.form-group select { 
+  width: 50%;
+  margin-left: 2.5px;
+  min-width: 230px;
+}
+#fiac-upload-form div.custom-file, 
+#qr-upload-form div.custom-file {
+  width: 60%; 
+  margin: 2.5px;
+  min-width: 230px;
+}
+
+div.form-div {
+  width: 50%;
+  text-align: center;
+  float: left;
+  margin-bottom: 20px;
+}
+
+div.form-div p {
+  font-size: 1.25em;
+  color: gray;
+}
+
+div.portal {
+  margin: 8%; 
+  margin-top: 0; 
+  padding-bottom: 55px; 
+  margin-bottom: 55px;
+}
+
+div.sub-reminder {
+  width: 87.5%; 
+  margin: auto;
+}
+
+/*  Loading Modal  */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 10; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 40px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.modal-content ul {
+  list-style: none;
+}
+
+.modal-content img {
+  width: 25px;
+}
+
+#name-list,
+#fail-list,
+#success-list,
+#file_1,
+#file_2,
+#file_3,
+#file_4,
+#file_5,
+#file_6,
+#file_7,
+#file_8, {
+  display: none;
+}
+
+/* ------ CONTENT END ------ */ 
+
+/* ------ FOOTER SECTION ------ */ 
+
+div.footer {
+  position: relative;
+  height: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid #E5E5E5;
+  box-shadow: 0px -2.5px 0px #F2F2F2;
+  background-color: #F8F9FA;
+  color: #7C7C7D;
+  padding: 1%;
+}
+
+div.footer a {
+  color: rgb(169, 169, 169);
+}
+div.footer a:hover {
+  color: #4A4A4B; 
+}
+
+/* ------ FOOTER END ------ */ 
